@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'EASTARJET-DemiLight';
+    src: url('./font/EASTARJET-DemiLight.otf') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EASTARJET-Heavy';
+    src: url('./font/EASTARJET-Heavy.otf') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+* { padding: 0;margin: 0; }
+body {font-size: 18px;letter-spacing: -.5px;font-family: 'EASTARJET-Heavy';background: #DDE8EE;}
+
+.Container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.innerwrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-width: 1000px;
+    max-width: 1000px;
+    height: 450px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.banner:before {content:'';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.7));}
+.banner > img {width: 100%;height: 450px;}
+.banner .bannertxt {
+    font-family: 'EASTARJET-DemiLight';
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    min-width: max-content;
+    text-align: center;
+}
+.banner .cursorDiv {position: absolute;left:50%;bottom: 15px;transform: translateX(-50%);}
+.banner .cursorDiv .cursor {
+    margin-left: 15px;
+    width: 35px;
+    cursor: pointer;
+    filter: invert(1);
+}
+.notice {
+    position: relative;
+    min-width: 450px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.apiBoard{
+    position: relative;
+    min-width: 450px;
+    border-radius: 30px;
+    /* height: 450px; */
+    border-spacing: 0;
+    overflow: hidden;
+}
+.apiBoard th {
+    height: 90px;
+    background: #184157;
+    color: #fff;
+}
+.apiBoard td {
+    height: calc(360px / 3);
+    text-align: center;
+}
+.apitit {
+    width: 85%;
+    display: inline-block;
+    background: #d0e0eb;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+.apiresult {
+    font-family: 'EASTARJET-DemiLight';
+}
+/* p {
+    width: 300px;
+    margin-Left: 250px;
+    font-size: 20px;
+    font-weight: bolder;
+} */
