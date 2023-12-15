@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.76c78589.css",
-    "main.js": "/static/js/main.4e43a44d.js",
+    "main.css": "/static/css/main.06c74bea.css",
+    "main.js": "/static/js/main.17634335.js",
     "static/media/EASTARJET-DemiLight.otf": "/static/media/EASTARJET-DemiLight.d5fbbcc2a5ea95622f38.otf",
     "static/media/EASTARJET-Heavy.otf": "/static/media/EASTARJET-Heavy.f04b58b2cb0ca29ebb98.otf",
     "index.html": "/index.html",
-    "main.76c78589.css.map": "/static/css/main.76c78589.css.map",
-    "main.4e43a44d.js.map": "/static/js/main.4e43a44d.js.map"
+    "main.06c74bea.css.map": "/static/css/main.06c74bea.css.map",
+    "main.17634335.js.map": "/static/js/main.17634335.js.map"
   },
   "entrypoints": [
-    "static/css/main.76c78589.css",
-    "static/js/main.4e43a44d.js"
+    "static/css/main.06c74bea.css",
+    "static/js/main.17634335.js"
   ]
 }

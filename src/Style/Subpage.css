@@ -1,11 +1,28 @@
-* { padding: 0;margin: 0; }
-body {font-size: 18px;letter-spacing: -.5px;font-family: 'EASTARJET-Heavy';background: #DDE8EE;}
-.subTop:before {content:'';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.7)); z-index: 1;}
+* {
+  padding: 0;
+  margin: 0;
+}
 
+body {
+  font-size: 18px;
+  letter-spacing: -.5px;
+  font-family: 'EASTARJET-Heavy';
+  background: #DDE8EE;
+}
 
+.subTop:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .7));
+  z-index: 1;
+}
 
-.subTop{
-  position:relative;
+.subTop {
+  position: relative;
   height: 280px;
   width: 100%;
   overflow: hidden;
@@ -15,32 +32,77 @@ body {font-size: 18px;letter-spacing: -.5px;font-family: 'EASTARJET-Heavy';backg
   width: 100%;
 }
 
-.subAll{
+.subAll {
   width: 100%;
   max-width: 1800px;
   display: flex;
 }
 
-.subMenu{
+.subMenu {
   width: 10%;
-  height: 700px;
+  height: 100vh;
   border: 0px solid black;
   background-color: white;
-  display: grid;
+  /* display: grid;
+  grid-template-rows: 15vh 15vh 15vh 15vh; */
+  display: flex;
+  align-content: center;
   align-items: center;
   text-align: center;
   font-size: 23px;
+  position: relative;
+}
+.subMenu .subMenuItem {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  }
+
+.subMenu .subMenuItem a {
+  width: 150px;
+  padding: 15px 25px;
+  background: #c1d7e3;
+  border-radius: 30px;
+  margin-left: 10px;
+  transition: .3s all;
+}
+.subMenu .subMenuItem a:hover {
+  transform: translateX(20px);
+  background: #184157;
+  color: #fff;
+}
+.subMenu .subMenuItem a.selected{
+  transform: translateX(20px);
+  background: #184157;
+  color: #fff;
 }
 
-.subText{
+.subText {
   width: 80%;
-  margin-left: 5%;
+  margin-left: 8%;
   font-size: 25px;
-  padding: 60px 0 ;
+  padding: 60px 0;
 }
 
-.subWord{
+.subWord {
   width: 80%;
   margin-left: 15%;
 }
 
+.words {
+  color: orange;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.words:hover {
+  color: blue;
+
+}
+
+.subText a:hover{
+  color:blue
+}

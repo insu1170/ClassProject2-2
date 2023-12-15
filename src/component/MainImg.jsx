@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "../Style/MainImg.css";
 import "../Style/Slogan.css";
-import "../Style/Acolor.css";
 import NoteBoard from "./NoteBoard";
 import Slogan from "./Slogan";
 import SImg from "./SImg";
@@ -16,36 +15,16 @@ function MainImg() {
     useEffect(() => {
         const interval = setInterval(() => {
             setBanner((prevBanner) => (prevBanner + 2) % 4);
-        }, 8000);
+        }, 5000);
         return () => clearInterval(interval);
     }, []);
 
-    const [Dday, setDday] = useState(100);
-
-    useEffect(() => {
-        const discharge = new Date("2023-11-20");
-        const today = new Date();
-
-        const diffTime = today - discharge;
-        const Days = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-        setDday(Days);
-    }, []);
-
-
+    const Dday = 100;
     const indexs = [
-        "/img/newAlps.png",
-        (
-            <span style={{fontWeight:"bold"}}>
-                오염수 3차 방류
-                <span style={{ color: 'red', fontWeight:"bold" }}> D+{Dday} </span>
-                일째입니다. <br/>과연 우리의 해양은 안전할까요?
-            </span>
-        ),
-        "/img/fish.png",
-        (<span style={{ color: "white", fontWeight:"bold" }}>
-            건강한 우리바다<br /> 안전한 우리식탁
-        </span>)
+        "/img/Banner.png",
+        `오염수 방류 D+${Dday} 일째입니다. 과연 우리의 해양은 안전할까요?`,
+        "/img/fish.jpg",
+        "냠냠"
     ];
 
     function LCursor() {
@@ -65,6 +44,7 @@ function MainImg() {
             setBanner(+2)
         }
     }
+
 
     return (
         <div className="Container">
@@ -91,9 +71,9 @@ function MainImg() {
             <div className="quick">
                 <div className="AppImg">
                     <Link className="divImg" to="Alps"><SImg src="/img/alps.png" text="ALPS란?" ></SImg></Link>
-                    <Link className="divImg" to="Seafood"><SImg src="/img/garib.png" text="수산물 정보" ></SImg></Link>
-                    <Link className="divImg" to="New"><SImg src="/img/water.png" text="최신동향"></SImg></Link>
-                    <Link className="divImg" to="Reference"><SImg src="/img/marine.png" text="참고사이트"></SImg></Link>
+                    <Link className="divImg" to="Seafood"><SImg src="/img/marine.png" text="수산물 정보" ></SImg></Link>
+                    <Link className="divImg" to="New"><SImg src="/img/new.png" text="최신동향"></SImg></Link>
+                    <Link className="divImg" to="Reference"><SImg src="/img/ocean.png" text="참고사이트"></SImg></Link>
                 </div>
             </div>
         </div>
