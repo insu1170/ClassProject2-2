@@ -46,7 +46,7 @@ function Alps() {
       <div>
       <Title/>
       </div>
-      <div id="AlpsComponent">
+      
         <SubBanner src="/img/SubBanner1.png" text="ALPS란?"></SubBanner>
         <div className="subAll">
           <div className="subMenu" style={{ marginTop: scroll }}>
@@ -99,12 +99,7 @@ function Alps() {
             <li><span className="words" onClick={Mark("Tritium")} >트리튬</span>:수소의 동위원소로, 핵융합 연구에서 사용되며, 중성자 발생과 깨끗한 에너지 생성에 관심을 받는 원소</li>
           </div>
         </div>
-        <div className="subAll">
-          <br />
-          <br />
-        </div>
       </div>
-    </div>
   );
 }
 

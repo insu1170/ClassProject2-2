@@ -97,10 +97,10 @@ function Seafood() {
             <thead>
               <tr>
                 <th style={{ padding: '10px' }}>
-                  <img src={process.env.PUBLIC_URL + "/img/Domestic.png"} alt="국내" />
+                  <img src={process.env.PUBLIC_URL + "/img/Domestic.png"} width="600px" alt="국내" />
                 </th>
                 <th style={{ padding: '10px' }}>
-                  <img src={process.env.PUBLIC_URL + "/img/Overseas.png"} alt="국외" />
+                  <img src={process.env.PUBLIC_URL + "/img/Overseas.png"} width="600px" alt="국외" />
                 </th>
               </tr>
             </thead>
@@ -114,11 +114,7 @@ function Seafood() {
           <br />
           <li><span className="words" onClick={Mark("suso")}>삼중수소</span>:세 개의 수소 원자로 이루어진 분자</li>
           <li><span className="words" onClick={Mark("sasum")}>세슘</span>:화학 원소로서 알칼리 금속에 속하는데,주로 원자 시계와 같은 과학적 및 산업적 응용에서 사용되는 금속 원소</li>
-
-        </div></div>
-      <div className="word">
-        <br />
-        <br />
+        </div>
       </div>
     </div>
   )
