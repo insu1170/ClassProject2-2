@@ -35,7 +35,9 @@ function Reference() {
 
   return (
     <div>
-      <Link to="/"><Title></Title></Link>
+      <div>
+        <Title/>
+      </div>
 
       <SubBanner src="/img/SubBanner4.png" text="참고 사이트"></SubBanner>
       <div className="subAll">

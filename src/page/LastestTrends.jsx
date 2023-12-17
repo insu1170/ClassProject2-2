@@ -40,7 +40,9 @@ function LatestTrends() {
 
   return (
     <div>
-      <Link to="/"><Title></Title></Link>
+      <div>
+        <Title/>
+      </div>
       <SubBanner src="/img/SubBanner3.png" text="최신동향"></SubBanner>
       <div className="subAll">
         <div className="subMenu" style={{ marginTop: barScroll }}>

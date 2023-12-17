@@ -43,7 +43,10 @@ function Seafood() {
 
   return (
     <div id="seafoodComponent">
-      <Link to="/"><Title></Title></Link>
+      <div>
+        <Title/>
+      </div>
+
       <SubBanner src="/img/SubBanner2.png" text="수산물 정보"></SubBanner>
       <div className="subAll">
         <div className="subMenu" style={{ marginTop: scroll }}>
