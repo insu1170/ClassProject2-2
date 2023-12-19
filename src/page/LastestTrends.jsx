@@ -14,10 +14,10 @@ function LatestTrends() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
-      if (currentScroll - 400 < 0) {
+      if (currentScroll - 350 < 0) {
         setBarScroll(0)
       } else {
-        setBarScroll(currentScroll - 400);
+        setBarScroll(currentScroll - 350);
       }
 
 
@@ -45,8 +45,8 @@ function LatestTrends() {
       </div>
       <SubBanner src="/img/SubBanner3.png" text="최신동향"></SubBanner>
       <div className="subAll">
-        <div className="subMenu" style={{ marginTop: barScroll }}>
-        <div className="subMenuItem">
+        <div className="subMenu" >
+        <div className="subMenuItem"style={{ marginTop: barScroll }}>
             <Link to="/Alps">ALPS?</Link>
             <Link to="/Seafood">수산물 정보</Link>
             <Link to="/LatestTrends" className="selected">최신동향</Link>
