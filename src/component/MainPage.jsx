@@ -16,7 +16,7 @@ function MainImg() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setBanner((prevBanner) => (prevBanner + 2) % 4);
+      setBanner((prevBanner) => (prevBanner + 2) % 6);
     }, 8000);
     return () => clearInterval(interval);
   }, []);
