@@ -13,10 +13,10 @@ function Alps() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
-      if (currentScroll - 400 < 0) { 
+      if (currentScroll - 350 < 0) { 
         setScroll(0);
       } else {
-        setScroll(currentScroll - 400);
+        setScroll(currentScroll - 350);
       }
 
     };
@@ -48,9 +48,9 @@ function Alps() {
       </div>
       
         <SubBanner src="/img/SubBanner1.png" text="ALPS란?"></SubBanner>
-        <div className="subAll">
-          <div className="subMenu" style={{ marginTop: scroll }}>
-            <div className="subMenuItem">
+        <div className="subAll" id="AlpsComponent">
+          <div className="subMenu" >
+            <div className="subMenuItem" style={{ marginTop: scroll,  }}>
               <Link to="/Alps" className="selected">ALPS?</Link>
               <Link to="/Seafood">수산물 정보</Link>
               <Link to="/LatestTrends">최신동향</Link>

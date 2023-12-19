@@ -13,10 +13,10 @@ function Seafood() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
-      if (currentScroll - 400 < 0) {
+      if (currentScroll - 350 < 0) {
         setScroll(0)
       } else {
-        setScroll(currentScroll - 400);
+        setScroll(currentScroll - 350);
       }
 
     };
@@ -49,8 +49,8 @@ function Seafood() {
 
       <SubBanner src="/img/SubBanner2.png" text="수산물 정보"></SubBanner>
       <div className="subAll">
-        <div className="subMenu" style={{ marginTop: scroll }}>
-        <div className="subMenuItem">
+        <div className="subMenu" >
+        <div className="subMenuItem"style={{ marginTop: scroll }}>
             <Link to="/Alps">ALPS?</Link>
             <Link to="/Seafood" className="selected">수산물 정보</Link>
             <Link to="/LatestTrends">최신동향</Link>

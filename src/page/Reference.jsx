@@ -18,10 +18,10 @@ function Reference() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
-      if (currentScroll - 400 < 0) {
+      if (currentScroll - 350 < 0) {
         setScroll(0)
       } else {
-        setScroll(currentScroll - 400);
+        setScroll(currentScroll - 350);
       }
 
     };
@@ -41,8 +41,8 @@ function Reference() {
 
       <SubBanner src="/img/SubBanner4.png" text="참고 사이트"></SubBanner>
       <div className="subAll">
-        <div className="subMenu" style={{ marginTop: scroll }}>
-        <div className="subMenuItem">
+        <div className="subMenu" >
+        <div className="subMenuItem"style={{ marginTop: scroll }}>
             <Link to="/Alps">ALPS?</Link>
             <Link to="/Seafood">수산물 정보</Link>
             <Link to="/LatestTrends">최신동향</Link>
