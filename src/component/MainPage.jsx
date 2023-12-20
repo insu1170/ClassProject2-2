@@ -16,7 +16,7 @@ function MainImg() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setBanner((prevBanner) => (prevBanner + 2) % 4);
+      setBanner((prevBanner) => (prevBanner + 2) % 6);
     }, 8000);
     return () => clearInterval(interval);
   }, []);
@@ -46,8 +46,8 @@ function MainImg() {
     "/img/MainBanner2.png",
     (<span style={{ color: "white", fontWeight: "bold" }}>
       건강한 우리바다<br /> 안전한 우리식탁
-    </span>),"/img/MainBanner3.png",(<span style={{ color: "white", fontWeight: "bold" }}>
-    안전한 우리 해양 수산물<br />우리 모두의 노력으로
+    </span>), "/img/MainBanner3.png", (<span style={{ color: "white", fontWeight: "bold" }}>
+      안전한 우리 해양 수산물<br />우리 모두의 노력으로
     </span>)
   ];
 
@@ -65,7 +65,7 @@ function MainImg() {
     if (number === indexs.length - 2) {
       setBanner(0)
     } else {
-      setBanner(number+2)
+      setBanner(number + 2)
     }
   }
 

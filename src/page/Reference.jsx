@@ -36,18 +36,18 @@ function Reference() {
   return (
     <div>
       <div>
-        <Title/>
+        <Title />
       </div>
 
       <SubBanner src="/img/SubBanner4.png" text="참고 사이트"></SubBanner>
       <div className="subAll">
         <div className="subMenu" >
-        <div className="subMenuItem"style={{ marginTop: scroll }}>
+          <div className="subMenuItem" style={{ marginTop: scroll }}>
             <Link to="/Alps">ALPS?</Link>
             <Link to="/Seafood">수산물 정보</Link>
             <Link to="/LatestTrends">최신동향</Link>
             <Link to="/Reference" className="selected">참고사이트</Link>
-        </div>
+          </div>
         </div>
         <div className="subText">
           <h1>사이트맵</h1>
