@@ -18,7 +18,6 @@ function Alps() {
       } else {
         setScroll(currentScroll - 350);
       }
-
     };
     window.addEventListener("scroll", handleScroll);
     return () => {

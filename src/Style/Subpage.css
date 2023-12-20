@@ -49,7 +49,7 @@ body {
   font-size: 23px;
   position: relative;
 }
-.subMenu .subMenuItem {
+.subMenuItem {
   position: absolute;
   top: 70px;
   left: 10px;
