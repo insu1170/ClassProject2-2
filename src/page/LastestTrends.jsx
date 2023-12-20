@@ -19,9 +19,6 @@ function LatestTrends() {
       } else {
         setBarScroll(currentScroll - 350);
       }
-
-
-
       setScroll(currentScroll);
     };
     window.addEventListener("scroll", handleScroll);

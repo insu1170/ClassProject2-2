@@ -8,7 +8,7 @@ const convert = require('xml-js');
 const app = express();
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://gentle-melba-44869b.netlify.app'],
+    origin: ['http://localhost:3000','https://gentle-melba-44869b.netlify.app'],
     methods: 'GET, POST, PUT, DELETE',
     credentials: true,
 }));
@@ -17,13 +17,11 @@ app.get('/getData', async (req, res) => {
     try {
         const apiUrl = 'https://www.nfqs.go.kr/hpmg/front/api/radioactivityDailyRslt.do';
         const apiKey = 'C539B9DD6931BE5B7111F75C546DA864F336BDED75E268E157ACF4D5361DC80D';
-
         const response = await axios.get(apiUrl, {
             params: {
                 cert_key: apiKey,
                 inspType: '01',
-            },
-            withCredentials: true,
+            }
         });
 
         const jsonData = convert.xml2json(response.data, { compact: true, spaces: 4 });
